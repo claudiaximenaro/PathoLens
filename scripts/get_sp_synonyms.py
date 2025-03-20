@@ -19,7 +19,7 @@ def get_species_synonyms(species_name, email):
     synonyms = tax_record.get("OtherNames", {}).get("Synonym", [])
     includes = tax_record.get("OtherNames", {}).get("Includes", [])
     
-    all_synonyms = synonyms + includes  # Agregar los nombres de "includes" a la lista de sinónimos
+    all_synonyms = synonyms + includes 
     
     return species_name, accepted_name, all_synonyms
 
