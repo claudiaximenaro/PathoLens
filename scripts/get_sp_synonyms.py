@@ -1,27 +1,42 @@
 import argparse
 import pandas as pd
 from Bio import Entrez
+import time
 
-def get_species_synonyms(species_name, email):
-    """Fetch synonyms and included names of a species from NCBI."""
+def get_species_synonyms(species_name, email, max_retries=3):
+    """Fetch synonyms and included names of a species from NCBI with retry mechanism."""
     Entrez.email = email  
-    handle = Entrez.esearch(db="taxonomy", term=species_name)
-    record = Entrez.read(handle)
+    retries = 0
     
-    if not record["IdList"]:
-        return species_name, species_name, []
+    while retries < max_retries:
+        try:
+            handle = Entrez.esearch(db="taxonomy", term=species_name)
+            record = Entrez.read(handle)
+            handle.close()
+            
+            if not record["IdList"]:
+                print(f"No tax ID found for {species_name}")
+                return species_name, species_name, []
+            
+            tax_id = record["IdList"][0]
+            handle = Entrez.efetch(db="taxonomy", id=tax_id, retmode="xml")
+            tax_record = Entrez.read(handle)[0]
+            handle.close()
+            
+            accepted_name = tax_record.get("ScientificName", species_name)
+            synonyms = tax_record.get("OtherNames", {}).get("Synonym", [])
+            includes = tax_record.get("OtherNames", {}).get("Includes", [])
+            
+            all_synonyms = synonyms + includes  
+            return species_name, accepted_name, all_synonyms
+        
+        except Exception as e:
+            retries += 1
+            print(f"Error fetching data for {species_name} (attempt {retries}/{max_retries}): {e}")
+            time.sleep(2 ** retries)  
     
-    tax_id = record["IdList"][0]
-    handle = Entrez.efetch(db="taxonomy", id=tax_id, retmode="xml")
-    tax_record = Entrez.read(handle)[0]
-    
-    accepted_name = tax_record.get("ScientificName", species_name)
-    synonyms = tax_record.get("OtherNames", {}).get("Synonym", [])
-    includes = tax_record.get("OtherNames", {}).get("Includes", [])
-    
-    all_synonyms = synonyms + includes 
-    
-    return species_name, accepted_name, all_synonyms
+    print(f"Failed to fetch data for {species_name} after {max_retries} attempts.")
+    return species_name, species_name, []
 
 def process_species_file(input_file, output_file, email):
     with open(input_file, 'r', encoding='utf-8') as file:
@@ -31,6 +46,7 @@ def process_species_file(input_file, output_file, email):
     max_synonyms = 0
     
     for species in species_list:
+        time.sleep(0.5)  # Evitar sobrecarga de la API
         eid_sp, accepted_name, synonyms = get_species_synonyms(species, email)
         eid_value = eid_sp if eid_sp != accepted_name else ""
         row = [accepted_name, eid_value] + synonyms
