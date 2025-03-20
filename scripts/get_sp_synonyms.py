@@ -6,7 +6,7 @@ import re
 
 def clean_species_name(full_name):
     """Extract only the binomial name (Genus + species), discard additional details, and remove brackets."""
-    # Remove square brackets and any content inside them
+    
     full_name = re.sub(r"\[([A-Za-z]+)\]", r"\1", full_name).strip()
     return full_name
 
