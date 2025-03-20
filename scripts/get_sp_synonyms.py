@@ -3,7 +3,7 @@ import pandas as pd
 from Bio import Entrez
 
 def get_species_synonyms(species_name, email):
-    """Fetch synonyms of a species from NCBI."""
+    """Fetch synonyms and included names of a species from NCBI."""
     Entrez.email = email  
     handle = Entrez.esearch(db="taxonomy", term=species_name)
     record = Entrez.read(handle)
@@ -17,8 +17,11 @@ def get_species_synonyms(species_name, email):
     
     accepted_name = tax_record.get("ScientificName", species_name)
     synonyms = tax_record.get("OtherNames", {}).get("Synonym", [])
+    includes = tax_record.get("OtherNames", {}).get("Includes", [])
     
-    return species_name, accepted_name, synonyms
+    all_synonyms = synonyms + includes  # Agregar los nombres de "includes" a la lista de sinónimos
+    
+    return species_name, accepted_name, all_synonyms
 
 def process_species_file(input_file, output_file, email):
     with open(input_file, 'r', encoding='utf-8') as file:
