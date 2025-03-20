@@ -6,9 +6,9 @@ import re
 
 def clean_species_name(full_name):
     """Extract only the binomial name (Genus + species), discard additional details, and remove brackets."""
-    
     full_name = re.sub(r"\[([A-Za-z]+)\]", r"\1", full_name).strip()
-    return full_name
+    match = re.match(r"([A-Z][a-z]+) ([a-z]+)", full_name)
+    return f"{match.group(1)} {match.group(2)}" if match else full_name
 
 
 def get_species_info(species_name,email, max_retries=3):
