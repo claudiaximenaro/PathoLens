@@ -10,12 +10,10 @@ def clean_species_name(full_name):
     match = re.match(r"([A-Z][a-z]+) ([a-z]+)", full_name)
     return f"{match.group(1)} {match.group(2)}" if match else full_name
 
-
-def get_species_info(species_name,email, max_retries=3):
+def get_species_info(species_name, email, max_retries=3):
     Entrez.email = email
     retries = 0
     """Get the TaxID and accepted scientific names for a species."""
-
     while retries < max_retries:
         try:
             clean_name = clean_species_name(species_name)  
@@ -38,7 +36,7 @@ def get_species_info(species_name,email, max_retries=3):
             includes = other_names.get("Includes", [])
             basionym = other_names.get("Basionym", [])
 
-            all_synonyms = synonyms  + basionym + includes
+            all_synonyms = synonyms + basionym + includes
             return tax_id, accepted_name, all_synonyms
         except Exception as e:
             retries += 1
@@ -75,7 +73,6 @@ def get_valid_accession_number(species_name, max_results=5):
         return None, None
 
 def process_species_file(input_file, output_file, email):
-    
     """Process the species list, fetching the accepted name and synonyms."""
     with open(input_file, 'r', encoding='utf-8') as file:
         species_list = [line.strip() for line in file if line.strip()]
@@ -85,13 +82,13 @@ def process_species_file(input_file, output_file, email):
 
     for species in species_list:
         time.sleep(0.5)  # Avoid overloading the NCBI API
-        tax_id, accepted_name, synonyms = get_species_info(species,email)
+        tax_id, accepted_name, synonyms = get_species_info(species, email)
 
         if tax_id is None:  # If no TaxID was found, try with AccNumber
             acc_number, organism = get_valid_accession_number(species)
             if organism:
                 print(f"Obtained {organism} via AccNumber")
-                tax_id, accepted_name, synonyms = get_species_info(organism,email)
+                tax_id, accepted_name, synonyms = get_species_info(organism, email)
 
         eid_value = species if species != accepted_name else ""
         row = [accepted_name, eid_value] + synonyms
@@ -99,17 +96,20 @@ def process_species_file(input_file, output_file, email):
         results.append(row)
 
     headers = ["Accepted Scientific Name", "EID_sp"] + [f"Synonym {i+1}" for i in range(max_synonyms)]
-
+    
     for row in results:
         row.extend([""] * (max_synonyms - (len(row) - 2)))
-
     
     df = pd.DataFrame(results, columns=headers)
+    
+    # Eliminar duplicados en "Accepted Scientific Name" si "EID_sp" está vacío
+    df = df.sort_values(by=["EID_sp"], ascending=False).drop_duplicates(subset=["Accepted Scientific Name"], keep='first')
+    df = df.sort_values(by=["Accepted Scientific Name"])
+
     df.to_excel(output_file, index=False)
     print(f"File saved: {output_file}")
 
 if __name__ == "__main__":
-    
     parser = argparse.ArgumentParser(description="Fetch species synonyms from NCBI and save to Excel.")
     parser.add_argument("input_file", help="Path to the input text file containing species names.")
     parser.add_argument("output_file", help="Path to the output Excel file.")
