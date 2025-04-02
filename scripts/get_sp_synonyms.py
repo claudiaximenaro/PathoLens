@@ -102,7 +102,7 @@ def process_species_file(input_file, output_file, email):
     
     df = pd.DataFrame(results, columns=headers)
     
-    # Eliminar duplicados en "Accepted Scientific Name" si "EID_sp" está vacío
+    
     df = df.sort_values(by=["EID_sp"], ascending=False).drop_duplicates(subset=["Accepted Scientific Name"], keep='first')
     df = df.sort_values(by=["Accepted Scientific Name"])
 
