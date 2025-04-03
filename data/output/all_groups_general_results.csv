@@ -1,0 +1,8 @@
+Group	Filter	N° of Sequences	N° of Unique Taxonomies
+SILVA	Initial	2224690	300435
+SILVA	Bacteria	1982812	224556
+Bacteria	uncultured-unidentified	652464	203564
+CRUSTACEAN	Initial	35046	262
+CRUSTACEAN	Genus-Species Discrepancy	1202	191
+CRUSTACEAN	Genus Included	1202	191
+CRUSTACEAN	Curated	34462	80

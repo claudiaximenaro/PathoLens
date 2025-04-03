@@ -93,11 +93,12 @@ def extract_fasta_group(fasta_file, species_file, output_fasta, group):
     
     with open(output_fasta, 'w', encoding='utf-8') as out_fasta:
         for record in SeqIO.parse(fasta_file, "fasta"):
-            description = record.description  # Full description
+            description = record.description.split(";")   
+            species_name = description[-1]
             
             # Check if any species name from the list is in the description
-            if any(species in description for species in species_set):
-                #SeqIO.write(record, out_fasta, "fasta")
+            if species_name in species_set:
+                
                 out_fasta.write(f">{record.description}\n{str(record.seq)}\n")
     
     count_and_extract_taxonomies(output_fasta, group,"Initial")

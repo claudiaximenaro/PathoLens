@@ -40,6 +40,7 @@ def build_database(fasta_file, species_file, unmatched_file, group):
 
     find_missing_species(group_path_fasta, species_file, group)
 
-    process_files(missing_species_file, unmatched_file, unique_species_file, group)
+    if unmatched_file is not None:
+        process_files(missing_species_file, unmatched_file, unique_species_file, group)
 
     print(f"Database for {group} successfully generated in {group_output_dir}.")

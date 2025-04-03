@@ -1,0 +1,74 @@
+Acinetobacter baumannii
+Acinetobacter sp. NCTC 7422
+Aeromonas enteropelogenes
+Aeromonas hydrophila
+Aeromonas sp. CCRC 13881
+Aeromonas sp. CCRC 13980
+Aeromonas veronii
+Aliivibrio fischeri
+Aliivibrio logei
+Bacillus cereus
+Bacillus circulans
+Bacillus endophyticus
+Bacillus licheniformis
+Bacillus pumilus
+Bacillus safensis
+Bacillus sp. B7
+Bacillus subtilis
+Bacillus tequilensis
+Brevibacillus brevis
+Brevibacterium antarcticum
+Brevibacterium sanguinis
+Citrobacter freundii
+Enterococcus casseliflavus
+Enterococcus faecalis
+Exiguobacterium oxidotolerans
+Francisella tularensis
+Leucothrix mucor
+Listonella anguillarum
+Microbacterium aurantiacum
+Microbacterium kitamiense
+Microbacterium oxydans
+Micrococcus luteus
+Mycoplasma monodon
+Paenibacillus lentimorbus
+Pantoea agglomerans
+Pantoea sp. SL1_M5
+Photobacterium damselae
+Proteus mirabilis
+Pseudoclavibacter helvolus
+Pseudomonas marincola
+Pseudomonas monteilii
+Pseudomonas putida
+Pseudomonas sp. GM4FR
+Psychrobacter glacincola
+Psychrobacter nivimaris
+Shewanella waksmanii
+Spiroplasma eriocheiris
+Spiroplasma penaei
+Staphylococcus epidermidis
+Stenotrophomonas maltophilia
+Streptococcus phocae
+Vibrio alginolyticus
+Vibrio brasiliensis
+Vibrio breoganii
+Vibrio campbellii
+Vibrio chagasii
+Vibrio crassostreae
+Vibrio cyclitrophicus
+Vibrio fortis
+Vibrio gigantis
+Vibrio harveyi
+Vibrio hepatarius
+Vibrio lentus
+Vibrio ordalii
+Vibrio parahaemolyticus
+Vibrio penaeicida
+Vibrio rotiferianus
+Vibrio sp. HENC-01
+Vibrio splendidus
+Vibrio tasmaniensis
+Vibrio tubiashii
+Vibrio vulnificus
+Wolbachia pipientis
+bacterium BM0323

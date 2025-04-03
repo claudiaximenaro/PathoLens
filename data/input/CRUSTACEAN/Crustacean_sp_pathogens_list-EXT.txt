@@ -1,0 +1,461 @@
+Acinetobacter baumannii
+Acinetobacter genomosp. 2
+Acinetobacter genomospecies 2
+Bacterium anitratum
+Acinetobacter baumannii CM-128
+Acinetobacter sp. 3208
+Acinetobacter sp. NCTC 7422
+bacterium SPL81
+Aeromonas enteropelogenes
+Aeromonas trota
+Aeromonas tructi
+Aeromonas sp. CECT 4255
+Aeromonas sp. CECT 4487
+Aeromonas sp. LK14
+Aeromonas hydrophila
+Aeromonas dourgesi
+Aeromonas hydrophila (Chester 1901) Stanier 1943 (Approved Lists 1980)
+Aeromonas liquefaciens
+Bacillus hydrophilus fuscus
+Bacterium hydrophilum
+Proteus hydrophilus
+Proteus ichthyosmius
+Pseudomonas hydrophila
+Aeromonas sp. ATCC 14715
+Aeromonas sp. ATCC 19570
+Aeromonas sp. Ah4
+Aeromonas sp. CCRC 13881
+Aeromonas sp. CCRC 13980
+Aeromonas sp. E20
+Aeromonas sp. G17
+Aeromonas sp. TH001
+Aeromonas sp. TH003
+Aeromonas sp. TH019
+Aeromonas sp. TH020
+Aeromonas sp. TH021
+Aeromonas sp. TH022
+Aeromonas sp. TH023
+Aeromonas sp. TH024
+Aeromonas sp. TH025
+Aeromonas sp. TH026
+Aeromonas sp. TH027
+Aeromonas sp. TH028
+Aeromonas sp. TH029
+Aeromonas sp. TH030
+Aeromonas sp. TH031
+Aeromonas sp. TH033
+Aeromonas sp. TH034
+Aeromonas sp. TH036
+Aeromonas sp. TH054
+Aeromonas sp. TH055
+Aeromonas sp. TH058
+Aeromonas sp. TH068
+Aeromonas sp. TH069
+Aeromonas sp. TH071
+Aeromonas sp. TH072
+Aeromonas sp. TH083
+Aeromonas sp. TH084
+Aeromonas sp. TH085
+Aeromonas sp. TH097
+Aeromonas sp. TH100
+Aeromonas sp. TH102
+Aeromonas sp. TH104
+Aeromonas sp. TH105
+Aeromonas sp. TH107
+Aeromonas sp. TH108
+Aeromonas sp. TH109
+Aeromonas sp. TH110
+Aeromonas sp. TH113
+Aeromonas sp. TH115
+Aeromonas sp. TH117
+Aeromonas sp. TH118
+Aeromonas sp. TH120
+Aeromonas sp. TH121
+Aeromonas sp. TH122
+Aeromonas sp. TH123
+Aeromonas sp. TH124
+Aeromonas sp. TH125
+Aeromonas sp. TH126
+Aeromonas sp. TH127
+Aeromonas sp. TH128
+Aeromonas sp. TH129
+Aeromonas sp. TH130
+Aeromonas sp. TH131
+Aeromonas sp. TH132
+Aeromonas sp. TH133
+Aeromonas sp. TH134
+Aeromonas sp. TH135
+Aeromonas sp. TH136
+Aeromonas sp. TH137
+Aeromonas sp. TH138
+Aeromonas sp. TH139
+Aeromonas sp. TH140
+Aeromonas sp. TH141
+Aeromonas sp. TH142
+bacterium BM0323
+Aeromonas veronii
+Aeromonas culicicola
+Aeromonas hybridization group 10 (HG10)
+Aeromonas ichthiosmia
+Enteric Group 77
+Aeromonas sp. CECT 4246
+Aeromonas sp. CECT 4257
+Aeromonas sp. G18
+Aeromonas sp. R1
+Aeromonas sp. R9
+Aeromonas sp. TH074
+Aeromonas sp. TH076
+Aliivibrio fischeri
+Bacterium phosphorescens indigenus (Eisenberg 1891) Chester 1897
+Achromobacter fischeri
+Bacillus fischeri
+Bacillus phosphorescens indigenus
+Einheimischer Leuchtbacillus
+Microspira fischeri
+Microspira marina
+Photobacterium fischeri
+Vibrio fischeri
+Vibrio noctiluca
+Aliivibrio logei
+Photobacterium logei
+Vibrio logei
+Bacillus cereus
+Bacillus cereus Frankland and Frankland 1887 (Approved Lists 1980)
+Bacillus endorhythmos
+Bacillus medusa
+Bacillus sp. 2479
+Bacillus sp. BHR3P2B3-M
+Bacillus sp. BS2(2013b)
+Bacillus sp. BV4
+Bacillus sp. JKR50
+Bacillus sp. JKR62
+Bacillus sp. JP44SK22
+Bacillus sp. JP44SK37
+Bacillus sp. JP44SK43
+Bacillus sp. JP44SK45
+Bacillus sp. JSG1(2014)
+Bacillus sp. JUB018
+Bacillus sp. KER 17
+Bacillus sp. MZ-01
+Bacillus sp. NCIM 2106
+Bacillus sp. NCIM 2217
+Bacillus sp. NCIM 2461
+Bacillus sp. PXDK-1
+Bacillus sp. Pf-1
+Bacillus sp. mmm86
+Bacillus licheniformis
+Clostridium licheniforme
+Denitrobacillus licheniformis
+Bacillus sp. A7(2012)
+Bacillus sp. BS1(2013)
+Bacillus sp. EnB-bsys4
+Bacillus sp. N11-8(2014)
+Bacillus sp. NCIM 2325
+Bacillus sp. SHG10
+Bacillus sp. WED10.6
+Bacillus pumilus
+Bacillus aminoglucosidicus
+Bacillus sp. CRBC-Kohala
+Bacillus sp. ES-3
+Bacillus sp. LK21
+Bacillus sp. LK32
+Bacillus sp. RI06-95
+Bacillus sp. nhk
+Bacillus safensis
+Bacillus sp. B7
+Bacillus sp. MS11
+Bacillus sp. SDF0016
+Bacillus subtilis
+Bacillus natto
+Bacillus uniflagellatus
+Vibrio subtilis
+Arthrobacter sp. CHR2P1B1-M
+Bacillus sp. 10405
+Bacillus sp. 15:2
+Bacillus sp. AECSB01
+Bacillus sp. AECSB04
+Bacillus sp. AECSB05
+Bacillus sp. AECSB06
+Bacillus sp. AECSB07
+Bacillus sp. AECSB08
+Bacillus sp. AECSB12
+Bacillus sp. AECSB13
+Bacillus sp. AECSB14
+Bacillus sp. BS4(2013)
+Bacillus sp. BS9(2013)
+Bacillus sp. BV3
+Bacillus sp. BV5
+Bacillus sp. HE08
+Bacillus sp. JKR21
+Bacillus sp. LB002
+Bacillus sp. LKM-BL
+Bacillus sp. PW16b
+Bacillus sp. PW19
+Bacillus sp. RSP-GLU
+Bacillus sp. S2 BC-1
+Bacillus sp. SWI06
+Bacillus sp. UMX-03
+Brevibacillus sp. BHR3P2B5-M
+Bacillus tequilensis
+Bacillus sp. ADIP3
+Bacillus sp. NOS6
+Bacillus sp. SN4
+Brevibacillus brevis
+Bacillus brevis
+Bacillus sp. NCIM 2531
+Bacillus sp. NCIM 2534
+Brevibacillus sp. JKR7
+Lysinibacillus sp. SDF0063
+Brevibacterium antarcticum
+'Brevibacterium antarcticum'
+Brevibacterium sanguinis
+Citrobacter freundii
+Bacterium freundii
+Citrobacter ballerupensis
+Escherichia freundii
+Salmonella ballerup
+Salmonella hormaechei
+the Ballerup group of bacteria
+the Bethesda group of bacteria
+Citrobacter sp. HPC1276
+Citrobacter sp. KDS 3
+Enterococcus casseliflavus
+Enterococcus flavescens
+Streptococcus casseliflavus
+Streptococcus faecium subsp. casseliflavus
+Streptococcus faecium var. casseliflavus
+Streptococcus flavescens
+Enterococcus sp. LMG 12310
+Enterococcus sp. VTT E-96690
+Enterococcus faecalis
+Enterococcus proteiformis
+Enterocoque
+Micrococcus ovalis
+Micrococcus zymogenes
+Streptococcus faecalis
+Streptococcus glycerinaceus
+Streptococcus liquefaciens
+Enterococcus sp. 7L76
+Enterococcus sp. KB1
+Exiguobacterium oxidotolerans
+Francisella tularensis
+Bacterium tularense
+Brucella tularensis
+Francisella tularense
+Pasteurella tularensis
+Leucothrix mucor
+Microbacterium aurantiacum
+Microbacterium kitamiense
+Microbacterium laevaniformans ATCC 49090
+Microbacterium oxydans
+Brevibacterium oxydans
+Microbacterium sp. W702
+Micrococcus luteus
+Micrococcus flavus Trevisan
+Bacteridium luteum
+Micrococcus lysodeikticus
+Sarcina lutea
+Burkholderia sp. 2385
+Micrococcus sp. AIAM01
+Micrococcus sp. VTT E-072678
+Mycoplasma P1
+Mycoplasma monodon
+Niallia circulans
+Bacillus circulans
+Bacillus sp. 3399BRRJ
+Bacillus sp. NCIM 2107
+Bacillus sp. NCIM 5045
+Bacillus sp. NCIM 5046
+Paenibacillus lentimorbus
+Bacillus lentimorbus
+Pantoea agglomerans
+Bacillus milletiae
+Bacterium herbicola
+Enterobacter agglomerans
+Erwinia herbicola
+Erwinia milletiae
+Pantoea herbicola
+Pseudomonas herbicola
+Pantoea sp. ATCC 29923
+Pantoea sp. SL1_M5
+bacterium G33-1
+Pasteuria ramosa
+Photobacterium damselae
+Listonella damsela (Love et al. 1982) MacDonell and Colwell 1986
+Listonella damselae corrig. (Love et al. 1982) MacDonell and Colwell 1986
+Photobacterium damsela
+Photobacterium damselae corrig. (Love et al. 1982) Smith et al. 1991
+Photobacterium histaminum
+Vibrio damsela Love et al. 1982
+Vibrio damselae corrig. Love et al. 1982
+Priestia endophytica
+Bacillus endophyticus
+Proteus mirabilis
+Pseudoclavibacter helvolus
+Zimmermannella helvola
+Pseudomonas marincola
+Pseudomonas sp. SI85-2B
+Pseudomonas monteilii
+Pseudomonas sp. MKP 213
+Pseudomonas sp. V7SW2
+Pseudomonas putida
+Arthrobacter siderocapsulatus
+Bacillus fluorescens putidus
+Bacillus putidus
+Pseudomonas arvilla
+Pseudomonas convexa
+Pseudomonas eisenbergii
+Pseudomonas incognita
+Pseudomonas ovalis
+Pseudomonas rugosa
+Pseudomonas striata
+Pseudomonas arvilla C-1
+Pseudomonas putida HK5
+Pseudomonas sp. 11CM-F1
+Pseudomonas sp. 11CM-S1
+Pseudomonas sp. ACP_03
+Pseudomonas sp. B21-029
+Pseudomonas sp. BW11M1
+Pseudomonas sp. CT363
+Pseudomonas sp. DRA525
+Pseudomonas sp. ECT1/2016
+Pseudomonas sp. ECT2/2016
+Pseudomonas sp. ETC3/2016
+Pseudomonas sp. FAR1/2016
+Pseudomonas sp. GM4FR
+Pseudomonas sp. KDB25
+Pseudomonas sp. KDS 6
+Pseudomonas sp. PSE3
+Pseudomonas sp. PT1/2016
+Pseudomonas sp. PX-A-Ps.sp2
+Pseudomonas sp. TAU2/2016
+Pseudomonas sp. TC29-1
+Pseudomonas sp. UF1/2016
+bacterium ASFP-1
+bacterium MASFP-4
+Psychrobacter glacincola
+Psychrobacter endoglaciecola
+Psychrobacter nivimaris
+Shewanella waksmanii
+Spiroplasma eriocheiris
+Spiroplasma eriocheir
+Spiroplasma penaei
+Staphylococcus epidermidis
+Albococcus epidermidis
+Micrococcus epidermidis
+Staphylococcus epidermidis albus
+Stenotrophomonas maltophilia
+Pseudomonas maltophilia (ex Hugh and Ryschenkow 1961) Hugh 1981
+Stenotrophomonas africana
+Xanthomonas maltiphilia
+Xanthomonas maltophilia
+Xanthomonas maltophilia (Hugh 1981) Swings et al. 1983
+Pseudomonas sp. LMG 20596
+Stenotrophomonas sp. ES-5
+Stenotrophomonas sp. ISSDS-759
+Stenotrophomonas sp. ISSDS-801
+Stenotrophomonas sp. ISSDS-818
+Stenotrophomonas sp. K6303-5-2b
+Stenotrophomonas sp. OUC_Est10
+Stenotrophomonas sp. T6220-6-1b
+Xanthomonadaceae bacterium OG-2
+Streptococcus phocae
+Streptococcus phocae Skaar et al. 1994
+Vibrio alginolyticus
+Beneckea alginolytica
+Oceanomonas alginolytica
+Pseudomonas creosotensis
+Vibrio sp. PeIg0901
+Vibrio anguillarum
+Listonella anguillarum
+Achromobacter ichthyodermis
+Listonella anguillara
+Pseudomonas ichthyodermis
+Vibrio ichthyodermis
+Vibrio piscium
+Vibrio piscium var. japonicus
+Vibrio brasiliensis
+Vibrio breoganii
+Vibrio sp. C 5.5
+Vibrio sp. CECT 7222
+Vibrio sp. CMJ 13.7
+Vibrio sp. LMG 23858
+Vibrio sp. LMG 24484
+Vibrio sp. VB 16.3
+Vibrio campbellii
+Beneckea campbellii
+Vibrio sp. K11A1
+Vibrio chagasii
+Vibrio sp. LMG 13219
+Vibrio sp. R-3712
+Vibrio crassostreae
+Vibrio sp. Mel 15
+Vibrio sp. Mel 7
+Vibrio sp. Mel 8
+Vibrio cyclitrophicus
+Vibrio sp. P-2P44
+Vibrio fortis
+Vibrio sp. LMG 21557
+Vibrio sp. LMG 21558
+Vibrio sp. LMG 21559
+Vibrio sp. LMG 21562
+Vibrio gigantis
+Vibrio sp. Mel 13
+Vibrio sp. Mel 16
+Vibrio sp. Mel 37
+Vibrio harveyi
+Achromobacter harveyi
+Beneckea harveyi
+Beneckea neptuna
+Lucibacterium harveyi
+Photobacterium harveyi
+Pseudomonas harveyi
+Vibrio carchariae
+Vibrio trachuri
+Vibrio sp. HENC-01
+Vibrio sp. HENC-02
+Vibrio sp. PG 001
+Vibrio sp. PG 002
+Vibrio sp. PG 006
+Vibrio sp. PG 007
+Vibrio hepatarius
+Vibrio sp. LMG 20362
+Vibrio lentus
+Vibrio ordalii
+Listonella ordalii
+Vibrio parahaemolyticus
+Beneckea parahaemolytica
+Oceanomonas parahaemolytica
+Pasteurella parahaemolytica
+Vibrio sp. Tumbes-M02
+Vibrio sp. Tumbes-M03
+Vibrio sp. Tumbes-M04
+Vibrio sp. Tumbes-M05
+Vibrio sp. Tumbes-M06
+Vibrio sp. Tumbes-M07
+Vibrio sp. Tumbes-M10
+Vibrio sp. Tumbes-M11
+Vibrio sp. Tumbes-M12
+Vibrio penaeicida
+Vibrio rotiferianus
+Vibrio splendidus
+Beneckea splendida
+Photobacter splendidum
+Vibrio hemicentroti
+Vibrio sp. AlyHP32
+Vibrio sp. NBRC 101061
+Vibrio sp. S/028/08 B
+Vibrio sp. S/12/16 B
+Vibrio sp. S/30/08 B
+Vibrio sp. S/63/15 B
+Vibrio tasmaniensis
+Vibrio sp. LMG 20012
+Vibrio tubiashii
+Listonella tubiashii
+Vibrio tubiashii subsp. tubiashii
+Vibrio sp. Fun1
+Vibrio sp. X1
+Vibrio sp. X6
+Vibrio vulnificus
+Beneckea vulnifica
+Wolbachia pipientis
