@@ -18,12 +18,15 @@ Brevibacterium sanguinis
 Citrobacter freundii
 Enterococcus casseliflavus
 Enterococcus faecalis
+Enterococcus flavescens
 Exiguobacterium oxidotolerans
 Francisella tularensis
 Leucothrix mucor
 Listonella anguillarum
+Microbacterium aurantiacum
 Microbacterium kitamiense
 Microbacterium oxydans
+Micrococcus flavus
 Micrococcus luteus
 Mycoplasma monodon
 Paenibacillus lentimorbus
@@ -44,6 +47,7 @@ Staphylococcus epidermidis
 Stenotrophomonas maltophilia
 Streptococcus phocae
 Vibrio alginolyticus
+Vibrio anguillarum
 Vibrio brasiliensis
 Vibrio breoganii
 Vibrio campbellii

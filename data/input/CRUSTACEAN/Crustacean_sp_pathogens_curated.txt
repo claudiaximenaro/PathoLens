@@ -1,19 +1,13 @@
 Acinetobacter baumannii
-Acinetobacter sp. NCTC 7422
 Aeromonas enteropelogenes
 Aeromonas hydrophila
-Aeromonas sp. CCRC 13881
-Aeromonas sp. CCRC 13980
 Aeromonas veronii
 Aliivibrio fischeri
 Aliivibrio logei
 Bacillus cereus
-Bacillus circulans
-Bacillus endophyticus
 Bacillus licheniformis
 Bacillus pumilus
 Bacillus safensis
-Bacillus sp. B7
 Bacillus subtilis
 Bacillus tequilensis
 Brevibacillus brevis
@@ -25,22 +19,21 @@ Enterococcus faecalis
 Exiguobacterium oxidotolerans
 Francisella tularensis
 Leucothrix mucor
-Listonella anguillarum
 Microbacterium aurantiacum
-Microbacterium kitamiense
 Microbacterium oxydans
+Micrococcus flavus
 Micrococcus luteus
-Mycoplasma monodon
+Mycoplasma P1
+Niallia circulans
 Paenibacillus lentimorbus
 Pantoea agglomerans
-Pantoea sp. SL1_M5
 Photobacterium damselae
+Priestia endophytica
 Proteus mirabilis
 Pseudoclavibacter helvolus
 Pseudomonas marincola
 Pseudomonas monteilii
 Pseudomonas putida
-Pseudomonas sp. GM4FR
 Psychrobacter glacincola
 Psychrobacter nivimaris
 Shewanella waksmanii
@@ -50,6 +43,7 @@ Staphylococcus epidermidis
 Stenotrophomonas maltophilia
 Streptococcus phocae
 Vibrio alginolyticus
+Vibrio anguillarum
 Vibrio brasiliensis
 Vibrio breoganii
 Vibrio campbellii
@@ -65,10 +59,8 @@ Vibrio ordalii
 Vibrio parahaemolyticus
 Vibrio penaeicida
 Vibrio rotiferianus
-Vibrio sp. HENC-01
 Vibrio splendidus
 Vibrio tasmaniensis
 Vibrio tubiashii
 Vibrio vulnificus
 Wolbachia pipientis
-bacterium BM0323
