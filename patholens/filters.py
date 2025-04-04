@@ -1,4 +1,4 @@
-from patholens.utils import load_species, count_and_extract_taxonomies, write_to_csv_general_results
+from patholens.utils import count_and_extract_taxonomies, write_to_csv_general_results
 
 
 def compare_taxonomy_genus_species(fasta_file,group):

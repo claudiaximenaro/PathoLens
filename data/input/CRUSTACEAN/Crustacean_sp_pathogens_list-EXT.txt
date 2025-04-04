@@ -21,6 +21,7 @@ Bacterium hydrophilum
 Proteus hydrophilus
 Proteus ichthyosmius
 Pseudomonas hydrophila
+Aeromonadaceae bacterium BM0323
 Aeromonas sp. ATCC 14715
 Aeromonas sp. ATCC 19570
 Aeromonas sp. Ah4
@@ -106,7 +107,7 @@ Aeromonas sp. R9
 Aeromonas sp. TH074
 Aeromonas sp. TH076
 Aliivibrio fischeri
-Bacterium phosphorescens indigenus (Eisenberg 1891) Chester 1897
+"Bacterium phosphorescens indigenus" (Eisenberg 1891) Chester 1897
 Achromobacter fischeri
 Bacillus fischeri
 Bacillus phosphorescens indigenus
@@ -250,8 +251,10 @@ Microbacterium laevaniformans ATCC 49090
 Microbacterium oxydans
 Brevibacterium oxydans
 Microbacterium sp. W702
+Micrococcus flavus
+Micrococcus sp. LW4
 Micrococcus luteus
-Micrococcus flavus Trevisan
+"Micrococcus flavus" Trevisan
 Bacteridium luteum
 Micrococcus lysodeikticus
 Sarcina lutea

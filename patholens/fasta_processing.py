@@ -69,10 +69,10 @@ def filter_fasta(input_fasta, output_fasta, filter_func):
 def species_filter(record):
     """
     Returns True if the record's species (extracted as the last part of the description
-    after splitting by ';') does not contain 'uncultured' or 'unidentified'.
+    after splitting by ';') does not contain 'uncultured', 'unidentified', 'unclassified', 'uncultivated'.
     """
     species = record.description.split(';')[-1].strip().lower()
-    return not any(term in species for term in ('uncultured', 'unidentified'))
+    return not any(term in species for term in ('uncultured', 'unidentified','unclassified', 'uncultivated','unculturable','unicellular'))
 
 # Define a factory to create a filtering function based on taxonomy prefix
 def taxonomy_filter(taxonomy_prefix):
@@ -103,7 +103,7 @@ def extract_fasta_group(fasta_file, species_file, output_fasta, group):
     
     count_and_extract_taxonomies(output_fasta, group,"Initial")
 
-def filter_fasta_only_retained_taxonomy(exclude_taxa_file, fasta_input, group, group_output,save_intermediate):
+def filter_fasta_only_retained_taxonomy(exclude_taxa_file, fasta_input, group, group_output):
     """
     Filters a FASTA file by removing sequences with exactly matching taxonomies.
 
@@ -143,10 +143,8 @@ def filter_fasta_only_retained_taxonomy(exclude_taxa_file, fasta_input, group, g
     with open(fasta_output, 'w') as f:
         f.writelines(filtered_fasta)
     
-    if save_intermediate:
-        uniques_tax,_=count_and_extract_taxonomies(fasta_output, group, "Curated")
-        save_to_txt(os.path.join(group_output, f"final_unique_taxonomies_{group}.txt"), uniques_tax)
-    else:
-        count_and_extract_taxonomies(fasta_output, group, "Curated")
-
+    
+    uniques_tax,_=count_and_extract_taxonomies(fasta_output, group, "Curated")
+    save_to_txt(os.path.join(group_output, f"FINAL_unique_taxonomies_{group}.txt"), uniques_tax)
+    
     return removed_sequences, len(removed_taxonomies)

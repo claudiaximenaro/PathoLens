@@ -72,7 +72,20 @@ def get_valid_accession_number(species_name, max_results=5):
         print(f"Error fetching AccNumber for {species_name}: {e}")
         return None, None
 
-def process_species_file(input_file, output_file, email):
+def generate_species_extended_list (synonyms_excel, group):
+    df = pd.read_excel(synonyms_excel, header=0)
+    df = df.loc[:, df.columns.notna()]
+    sp_name = df.values.flatten()
+    sp_name = [str(valor).strip() for valor in sp_name if pd.notna(valor) and str(valor).strip()]
+
+    uniques_sp = list(dict.fromkeys(sp_name))
+
+    with open(f'data/input/{group}/{group}_sp_pathogens_list-EXT.txt', 'w', encoding='utf-8') as f:
+        f.write("\n".join(uniques_sp))  
+
+
+def process_species_file(input_file, email, output_file):
+
     """Process the species list, fetching the accepted name and synonyms."""
     with open(input_file, 'r', encoding='utf-8') as file:
         species_list = [line.strip() for line in file if line.strip()]
@@ -108,12 +121,17 @@ def process_species_file(input_file, output_file, email):
 
     df.to_excel(output_file, index=False)
     print(f"File saved: {output_file}")
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch species synonyms from NCBI and save to Excel.")
     parser.add_argument("input_file", help="Path to the input text file containing species names.")
-    parser.add_argument("output_file", help="Path to the output Excel file.")
     parser.add_argument("email", help="Email address required by NCBI Entrez API.")
+    parser.add_argument("group", help="Taxonomic group for the species.")
     
     args = parser.parse_args()
-    process_species_file(args.input_file, args.output_file, args.email)
+    output_file=f'data/input/{args.group}/{args.group}_Pathogen_TaxSyn_List.xlsx'
+    process_species_file(args.input_file, args.email, output_file)
+    print("..........")
+    generate_species_extended_list (output_file, args.group)
+    print("Process completed.")

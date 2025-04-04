@@ -1,1 +1,3 @@
 *.fasta
+*.egg-info/
+data/output

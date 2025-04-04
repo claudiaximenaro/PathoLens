@@ -28,7 +28,7 @@ def build_database(fasta_file, species_file, unmatched_file, group):
         print(f"Bacteria FASTA files generated and stored in {SILVA_DIR}")
     else:
         print("Skipping construction of Bacteria-only FASTA. Using existing files.")
-    
+
     count_and_extract_taxonomies(fasta_file, "SILVA", "Initial")
     count_and_extract_taxonomies(bacteria_fasta, "SILVA", "Bacteria")
     count_and_extract_taxonomies(filtered_fasta, "Bacteria", "uncultured-unidentified")

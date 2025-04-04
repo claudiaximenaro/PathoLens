@@ -30,6 +30,7 @@ Bacillus aquimaris
 Bacillus cereus
 Bacillus circulans
 Bacillus flexus
+Bacillus fusiformis
 Bacillus infantis
 Bacillus licheniformis
 Bacillus megaterium
@@ -63,12 +64,14 @@ Enterobacter hormaechei
 Enterococcus casseliflavus
 Enterococcus faecalis
 Enterococcus faecium
+Enterococcus flavescens
 Enterococcus hirae
 Enterovibrio nigricans
 Enterovibrio norvegicus
 Epulopiscium fishelsoni
 Erwinia persicina
 Exiguobacterium acetylicum
+Exiguobacterium enclense
 Exiguobacterium indicum
 Flavobacterium columnare
 Flavobacterium johnsoniae
@@ -95,6 +98,7 @@ Methylobacterium gregans
 Microbacterium esteraromaticum
 Microbacterium oxydans
 Microbacterium paraoxydans
+Micrococcus flavus
 Micrococcus luteus
 Micrococcus yunnanensis
 Moellerella wisconsensis
@@ -114,6 +118,8 @@ Mycobacterium pseudoshottsii
 Mycobacterium salmoniphilum
 Mycobacterium shottsii
 Mycobacterium szulgai
+Mycobacteroides chelonae
+Mycolicibacterium fortuitum
 Myroides odoratimimus
 Nocardia seriolae
 Obesumbacterium proteus
@@ -121,6 +127,7 @@ Oceanobacillus oncorhynchi
 Oerskovia turbata
 Paenibacillus thiaminolyticus
 Pasteurella skyensis
+Pediococcus parvulus
 Pediococcus pentosaceus
 Photobacterium damselae
 Photobacterium iliopiscarium
@@ -134,6 +141,7 @@ Proteus vulgaris
 Providencia alcalifaciens
 Pseudarthrobacter oxydans
 Pseudidiomarina homiensis
+Pseudoalteromonas flavipulchra
 Pseudoalteromonas maricaloris
 Pseudoalteromonas ruthenica
 Pseudoalteromonas spongiae
@@ -155,17 +163,21 @@ Psychrobacter psychrophilus
 Rahnella aquatilis
 Raoultella ornithinolytica
 Renibacterium salmoninarum
+Rhodococcus degradans
+Rhodococcus enclensis
 Rhodococcus erythropolis
 Rhodococcus qingshengii
 Salmonella enterica
 Serratia marcescens
 Serratia proteamaculans
+Shewanella alga
 Shewanella algae
 Shewanella baltica
 Shewanella halifaxensis
 Shewanella haliotis
 Shewanella pneumatophori
 Shewanella putrefaciens
+Shewanella upenei
 Shewanella woodyi
 Shewanella xiamenensis
 Soonwooa buanensis
@@ -191,6 +203,7 @@ Vibrio campbellii
 Vibrio cholerae
 Vibrio crassostreae
 Vibrio diabolicus
+Vibrio fischeri
 Vibrio fortis
 Vibrio gigantis
 Vibrio harveyi
@@ -198,6 +211,7 @@ Vibrio hepatarius
 Vibrio hippocampi
 Vibrio ichthyoenteri
 Vibrio lentus
+Vibrio logei
 Vibrio mediterranei
 Vibrio mimicus
 Vibrio nereis
@@ -210,6 +224,8 @@ Vibrio ponticus
 Vibrio proteolyticus
 Vibrio rotiferianus
 Vibrio scophthalmi
+Vibrio shiloi
+Vibrio shilonii
 Vibrio sinaloensis
 Vibrio splendidus
 Vibrio tapetis
