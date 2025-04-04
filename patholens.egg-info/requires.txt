@@ -1,4 +1,0 @@
-pandas
-biopython
-openpyxl
-requests
