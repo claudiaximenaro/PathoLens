@@ -1,4 +1,4 @@
 *.fasta
-*.egg-info/
+patholens.egg-info/
 .DS_Store
 data/output
