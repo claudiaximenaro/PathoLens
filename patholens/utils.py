@@ -158,10 +158,8 @@ def find_missing_species(fasta_file, species_file, group):
         species_file (str): File containing the list of species.
         group (str): Prefix for the output files.
 
-    Output:
-        - "<group>_missing_species.txt": List of species missing from the FASTA file.
+    
     """
-    output_file = os.path.join(OUTPUT_DIR,group, f"{group}_missing_species.txt")
 
     species_set = load_species(species_file, return_type="set")
     found_species = set()
@@ -173,16 +171,10 @@ def find_missing_species(fasta_file, species_file, group):
             if species in description:
                 found_species.add(species)
 
-    missing_species = species_set - found_species
+    
     print(f"Total species listed: {len(species_set)}")
     print(f"Total species found in {group}: {len(found_species)}")
-    print(f"Total missing species: {len(missing_species)}")
-
-    with open(output_file, 'w', encoding='utf-8') as out_f:
-        for species in sorted(missing_species):
-            out_f.write(species + "\n")
-
-    print(f"List of missing species stored in: {output_file}")
+    
 
 
 
@@ -198,11 +190,10 @@ def extract_and_filter_species(fasta_file, exclude_species_file, group):
     
     Output:
         - "<group>_unique_species.txt" (contains all unique species)
-        - "<group>_filtered_species.txt" (contains unique species after filtering)
     """
     
     unique_species_file = os.path.join(OUTPUT_DIR,group, f"{group}_unique_species.txt")
-    filtered_species_file = os.path.join(OUTPUT_DIR,group, f"{group}_filtered_species.txt")
+
 
     species_set = set()
     with open(fasta_file, 'r') as file:
@@ -218,14 +209,9 @@ def extract_and_filter_species(fasta_file, exclude_species_file, group):
     with open(exclude_species_file, 'r') as file:
         exclude_species = {line.strip() for line in file if line.strip()}
     
-    filtered_species = species_set - exclude_species
-    
-    with open(filtered_species_file, 'w') as out_file:
-        for species in sorted(filtered_species):
-            out_file.write(species + '\n')
 
     print(f"Unique species saved to: {unique_species_file}")
-    print(f"Filtered species saved to: {filtered_species_file}")
+    
 
 def extract_species_to_remove(removal_sp_file_path):
     """

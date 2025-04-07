@@ -10,15 +10,15 @@ to remove unidentified or uncultured species, and group-specific filters
 to extract pathogen sequences relevant to the target group'''
 
 
-def build_database(fasta_file, species_file, unmatched_file, group):
+def build_database(fasta_file, species_file, group):
     group_output_dir = get_group_output_dir(group)
 
 
     bacteria_fasta = os.path.join(SILVA_DIR, "Bacteria.fasta")
     filtered_fasta = os.path.join(SILVA_DIR, "Bacteria_filtered.fasta")
     group_path_fasta = os.path.join(group_output_dir, f"{group}_Pathogen_DB_Unfiltered.fasta")
-    unique_species_file = os.path.join(group_output_dir, f"{group}_unique_species.txt")
-    missing_species_file = os.path.join(group_output_dir, f"{group}_missing_species.txt")
+    
+    
 
     
     if not os.path.exists(bacteria_fasta) or not os.path.exists(filtered_fasta):
@@ -39,8 +39,5 @@ def build_database(fasta_file, species_file, unmatched_file, group):
     extract_and_filter_species(group_path_fasta, species_file, group)
 
     find_missing_species(group_path_fasta, species_file, group)
-
-    if unmatched_file is not None:
-        process_files(missing_species_file, unmatched_file, unique_species_file, group)
 
     print(f"Database for {group} successfully generated in {group_output_dir}.")

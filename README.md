@@ -87,10 +87,6 @@ data/
 ├── output/
 │   ├── HUMAN/
 │   │   ├── HUMAN_Pathogen_DB.fasta
-│   │   ├── HUMAN_filtered_species.txt
-│   │   ├── HUMAN_missing_species.txt
-│   │   ├── HUMAN_missing_sp_info.csv
-│   │   ├── HUMAN_unique_species.txt
 │   ├── FISH/
 │   ├── CRUSTACEAN/
 │   ├── all_groups_general_results.csv
@@ -98,7 +94,7 @@ data/
 
 ## Configuration
 
-PathoLens uses a `config.py` file to manage input and output directories. 
+PathoLens uses a `config.py` file to manage input and output directories.
 
 ## License
 

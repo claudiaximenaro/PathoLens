@@ -9,7 +9,6 @@
 [Eubacterium] nodatum
 [Eubacterium] saphenum
 [Eubacterium] yurii
-[Eubacterium] yurii subsp. yurii
 [Haemophilus] ducreyi
 Abiotrophia defectiva
 Acetoanaerobium sticklandii
@@ -32,7 +31,6 @@ Acinetobacter calcoaceticus
 Acinetobacter chinensis
 Acinetobacter cumulans
 Acinetobacter equi
-Acinetobacter genomosp.
 Acinetobacter gyllenbergii
 Acinetobacter haemolyticus
 Acinetobacter indicus
@@ -51,8 +49,6 @@ Acinetobacter seifertii
 Acinetobacter septicus
 Acinetobacter shaoyimingii
 Acinetobacter soli
-Acinetobacter sp. NIPH 713
-Acinetobacter sp. WCHAc010005
 Acinetobacter tandoii
 Acinetobacter towneri
 Acinetobacter ursingii
@@ -296,7 +292,7 @@ Borrelia turicatae
 Borrelia valaisiana
 Borreliella afzelii
 Borreliella andersonii
-Borreliella burgdorferi
+Borreliella burgdorferi (Lyme disease spirochete)
 Borreliella garinii
 Borreliella spielmanii
 Borreliella valaisiana
@@ -598,7 +594,6 @@ Ehrlichia muris
 Ehrlichia ruminantium
 Eikenella corrodens
 Elizabethkingia anophelis
-Elizabethkingia genomosp. 2
 Elizabethkingia meningoseptica
 Elizabethkingia miricola
 Empedobacter brevis
@@ -927,7 +922,6 @@ Leuconostoc citreum
 Leuconostoc fallax
 Leuconostoc garlicum
 Leuconostoc gelidum
-Leuconostoc gelidum subsp. Gasicomitatum
 Leuconostoc kimchii
 Leuconostoc lactis
 Leuconostoc mesenteroides
@@ -948,7 +942,6 @@ Mannheimia haemolytica
 Massilia timonae
 Megasphaera elsdenii
 Megasphaera micronuciformis
-Megasphaera sp.
 Mesomycoplasma bovoculi
 Mesomycoplasma dispar
 Mesomycoplasma flocculare
@@ -1503,11 +1496,6 @@ Pseudomonas sihuiensis
 Pseudomonas silesiensis
 Pseudomonas simiae
 Pseudomonas soli
-Pseudomonas sp. CMR12a
-Pseudomonas sp. MS586
-Pseudomonas sp. PI11
-Pseudomonas sp. RD8MR3
-Pseudomonas sp. RW10S1
 Pseudomonas stutzeri
 Pseudomonas synxantha
 Pseudomonas syringae
@@ -1559,7 +1547,6 @@ Rhodococcus opacus
 Rhodococcus percolatus
 Rhodococcus pyridinivorans
 Rhodococcus rhodochrous
-Rhodococcus sp. PBTS 2
 Rickettsia africae
 Rickettsia akari
 Rickettsia amblyommatis
@@ -1691,7 +1678,6 @@ Sphingomonas rhizogenes
 Sphingomonas rhizophila
 Sphingomonas sanguinis
 Sphingomonas sanxanigenens
-Sphingomonas sp. HKS19
 Sphingomonas taxi
 Sphingomonas wittichii
 Staphylococcus agnetis
@@ -1809,7 +1795,6 @@ Streptococcus salivarius
 Streptococcus sanguinis
 Streptococcus sinensis
 Streptococcus sobrinus
-Streptococcus sp. ChDC B345
 Streptococcus suis
 Streptococcus thermophilus
 Streptococcus thoraltensis
@@ -1860,7 +1845,6 @@ Streptomyces xiamenensis
 Sutterella parvirubra
 Sutterella sanguinus
 Sutterella wadsworthensis
-synthetic Mycoplasma genitalium JCVI-1.0
 Tannerella forsythia
 Tatumella ptyseos
 Taylorella asinigenitalis
@@ -1883,7 +1867,6 @@ Treponema pedis
 Treponema primitia
 Treponema putidum
 Treponema socranskii
-Treponema sp. OMZ 806
 Treponema succinifaciens
 Treponema vincentii
 Tropheryma whipplei
