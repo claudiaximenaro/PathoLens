@@ -117,7 +117,7 @@ def filter_fasta_only_retained_taxonomy(exclude_taxa_file, fasta_input, group, g
     """
     exclude_taxa=extract_species_to_remove(exclude_taxa_file)
     # Define output file paths inside the group output folder
-    fasta_output = os.path.join(group_output, f"{group}_Pathogen_DB_curated.fasta")
+    fasta_output = os.path.join(group_output, f"{group}_Pathogen_DB.fasta")
 
 
     with open(fasta_input, 'r') as f:
