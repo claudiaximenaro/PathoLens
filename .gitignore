@@ -4,3 +4,4 @@ patholens.egg-info/
 data/output
 __pycache__/
 *.py[cod]
+*.ipynb
