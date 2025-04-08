@@ -32,9 +32,8 @@ python3 scripts/run_db_builder.py -h
 #### Command-line arguments:
 
 ```
-usage: run_db_builder.py [-h] --fasta FASTA --species SPECIES
-                         --group GROUP [--unmatched UNMATCHED]
-
+usage: 1_run_db_builder.py [-h] --fasta FASTA --species SPECIES
+                         --group GROUP
 PathoLens - Pathogenic Bacteria Database.
 
 options:
@@ -42,20 +41,18 @@ options:
   --fasta FASTA         FASTA input file (SILVA).
   --species SPECIES     TXT file with pathogenic species.
   --group GROUP         Taxonomic group (HUMAN, FISH, CRUSTACEAN).
-  --unmatched UNMATCHED Optional: CSV file with additional
-                        information for missing species table.
 ```
 
 ### Running the filters
 
 ```bash
-python3 scripts/run_filters_db.py
+python3 scripts/2_run_filters_db.py
 ```
 
 ### Running the curated database process
 
 ```bash
-python3 scripts/run_curated_db.py
+python3 scripts/3_run_curated_db.py
 ```
 
 ## Input Data Structure
@@ -68,8 +65,7 @@ data/
 │   ├── SILVA/
 │   │   ├── SILVA_138.2_SSURef_tax_silva.fasta
 │   ├── HUMAN/
-│   │   ├── Human_patho_species.txt
-│   │   ├── Human_not_silva.csv
+│   │   ├── Human_sp_pathogens_list.txt
 │   ├── FISH/
 │   ├── CRUSTACEAN/
 ```
