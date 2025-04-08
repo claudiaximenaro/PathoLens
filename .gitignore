@@ -5,3 +5,5 @@ data/output
 __pycache__/
 *.py[cod]
 *.ipynb
+*Pathogen_TaxSyn_List.xlsx
+*sp_pathogens_list-EXT.txt
