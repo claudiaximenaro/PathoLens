@@ -18,7 +18,7 @@ Clone the repository and install the package along with its dependencies:
 ```bash
  git clone https://github.com/claudiaximenaro/PathoLens.git
  cd PathoLens
- pip install .
+ pip install -e .
 ```
 
 ## Usage
