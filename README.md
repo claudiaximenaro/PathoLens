@@ -41,10 +41,11 @@ data/
 ## Important:
 
 * You **do not need to provide full paths** for the input files, only the file names. The script assumes that the files are placed within the **structured input directories** imposed by PathoLens.
-* 
-### Command-line arguments:
 
-#### Running the database builder
+  
+## Command-line arguments:
+
+### Running the database builder
 
 ```bash
 python3 scripts/1_run_db_builder.py -h
@@ -64,7 +65,7 @@ options:
   --group GROUP      Taxonomic group (HUMAN, FISH, CRUSTACEAN).
 ```
 
-#### Running the filters
+### Running the filters
 
 ```bash
 python3 scripts/2_run_db_filters.py -h
@@ -80,7 +81,7 @@ options:
   --group GROUP        Taxonomic group (HUMAN, FISH, CRUSTACEAN).
   --save_intermediate  Save intermediate results. (optional)
 ```
-#### Running the curated database process
+### Running the curated database process
 
 ```bash
 python3 scripts/3_run_db_curation.py -h
