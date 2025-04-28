@@ -23,38 +23,6 @@ Clone the repository and install the package along with its dependencies:
 
 ## Usage
 
-### Running the database builder
-
-```bash
-python3 scripts/run_db_builder.py -h
-```
-
-#### Command-line arguments:
-
-```
-usage: 1_run_db_builder.py [-h] --fasta FASTA --species SPECIES
-                         --group GROUP
-PathoLens - Pathogenic Bacteria Database.
-
-options:
-  -h, --help            show this help message and exit
-  --fasta FASTA         FASTA input file (SILVA).
-  --species SPECIES     TXT file with pathogenic species.
-  --group GROUP         Taxonomic group (HUMAN, FISH, CRUSTACEAN).
-```
-
-### Running the filters
-
-```bash
-python3 scripts/2_run_filters_db.py
-```
-
-### Running the curated database process
-
-```bash
-python3 scripts/3_run_curated_db.py
-```
-
 ## Input Data Structure
 
 PathoLens expects the following directory structure for input data:
@@ -73,6 +41,60 @@ data/
 ## Important:
 
 * You **do not need to provide full paths** for the input files, only the file names. The script assumes that the files are placed within the **structured input directories** imposed by PathoLens.
+* 
+### Command-line arguments:
+
+#### Running the database builder
+
+```bash
+python3 scripts/1_run_db_builder.py -h
+```
+
+
+```
+usage: 1_run_db_builder.py [-h] --fasta FASTA --species SPECIES
+                           --group GROUP
+
+PathoLens - Pathogenic Bacteria Database.
+
+options:
+  -h, --help         show this help message and exit
+  --fasta FASTA      FASTA input file (SILVA).
+  --species SPECIES  TXT file with pathogenic species.
+  --group GROUP      Taxonomic group (HUMAN, FISH, CRUSTACEAN).
+```
+
+#### Running the filters
+
+```bash
+python3 scripts/2_run_db_filters.py -h
+```
+
+```bash
+usage: 2_run_db_filters.py [-h] --group GROUP [--save_intermediate]
+
+Run taxonomy filters on a FASTA file.
+
+options:
+  -h, --help           show this help message and exit
+  --group GROUP        Taxonomic group (HUMAN, FISH, CRUSTACEAN).
+  --save_intermediate  Save intermediate results. (optional)
+```
+#### Running the curated database process
+
+```bash
+python3 scripts/3_run_db_curation.py -h
+```
+```bash
+usage: 3_run_db_curation.py [-h] --sp_remove SP_REMOVE --group GROUP
+
+Curated Pathogen Database Generator.
+
+options:
+  -h, --help            show this help message and exit
+  --sp_remove SP_REMOVE Excel file with species to exclude.                   
+  --group GROUP         Taxonomic group (HUMAN, FISH, CRUSTACEAN).
+```
 
 ## Output Data Structure
 
@@ -94,7 +116,7 @@ PathoLens uses a `config.py` file to manage input and output directories.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL-3.0 license.
 
 ## Contact
 
