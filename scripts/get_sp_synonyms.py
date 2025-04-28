@@ -1,3 +1,8 @@
+# This script fetches accepted scientific names and synonyms for a list of species from NCBI Entrez. 
+# It processes species data and outputs the results in an Excel file, including synonyms and taxonomic information.
+
+
+
 import argparse
 import pandas as pd
 from Bio import Entrez
