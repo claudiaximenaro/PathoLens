@@ -123,3 +123,67 @@ This project is licensed under the GPL-3.0 license.
 ## Contact
 
 For questions or contributions, please contact claudia.restrepo-ortiz@ird.fr or open an issue on GitHub.
+
+```
+
+---
+config:
+  theme: neo
+  look: neo
+  layout: dagre
+---
+flowchart TB
+ subgraph Data_and_List_Generation["Data & List Generation"]
+        PD["Pathogenic Databases"]
+        H["Human sources: papers & pipelines (16SPIP, FAPROTAX, etc.)"]
+        F["Fish sources: Wardeh et al."]
+        A["Arthropod sources: Wardeh et al."]
+        Cf["Crustacean filtering (ensembl_crustacea.py)"]
+        PPL["Potential pathogenic species lists"]
+        SE["Synonym expansion (get_sp_synonyms.py)"]
+        EXT["Extended PPB species lists<br>(Human / Fish / Crustacea)"]
+  end
+ subgraph Stage1["Stage 1: Database Builder"]
+        B1["1_run_database_builder.py"]
+        INIT["Initial datasets"]
+        UNF["Unfiltered FASTA per group"]
+        RAW["Raw metadata"]
+  end
+ subgraph Stage2["Stage 2: DB Filters"]
+        F2["2_run_db_filters.py"]
+        FFA["Filtered FASTA"]
+        INT["Intermediate files (optional)"]
+  end
+ subgraph Stage3["Stage 3: DB Curation"]
+        C1["3_run_db_curation.py"]
+        TAX["Tax_reviewed_(group).xlsx"]
+        CFA["Unfiltered FASTA"]
+        SUM["Species-level summary"]
+  end
+ subgraph s1["<span style=padding-left:>Stage 1b: BACTERIA Database </span>"]
+        SILVA["SILVA SSU db (v138.2)"]
+        BF["Filter to Bacteria only"]
+        BFC@{ label: "Remove 'uncultured' & 'unidentified'" }
+  end
+    PD --> H & F & A
+    H --> PPL
+    A --> Cf
+    Cf --> PPL
+    SE --> EXT
+    SILVA --> BF
+    BF --> BFC
+    EXT --> INIT
+    INIT --> B1
+    B1 --> UNF & RAW & s1
+    UNF --> F2
+    F2 --> FFA & INT
+    FFA --> C1
+    C1 --> TAX & CFA & SUM
+    CFA --> OUT1["data/output/(group)/Curated_DB.fasta"]
+    SUM --> OUT2["all_groups_general_results.csv"]
+    BFC --> B1
+    F --> PPL
+    PPL --> SE
+    TAX --> CFA
+    BFC@{ shape: rect}
+```
