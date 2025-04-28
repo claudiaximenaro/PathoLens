@@ -28,14 +28,15 @@ Clone the repository and install the package along with its dependencies:
 PathoLens expects the following directory structure for input data:
 
 ```
-data/
-├── input/
-│   ├── SILVA/
-│   │   ├── SILVA_138.2_SSURef_tax_silva.fasta
-│   ├── HUMAN/
-│   │   ├── Human_sp_pathogens_list.txt
-│   ├── FISH/
-│   ├── CRUSTACEAN/
+.
+├── data
+│   ├── input
+│   │   ├── CRUSTACEAN
+│   │   │   ├── Crustacean_sp_pathogens_list.txt
+│   │   ├── FISH
+│   │   ├── HUMAN
+│   │   └── SILVA
+│   │       └── SILVA_138.2_SSURef_tax_silva.fasta
 ```
 
 ## Important:
@@ -99,13 +100,16 @@ options:
 Results are saved in the following directory structure:
 
 ```
-data/
-├── output/
-│   ├── HUMAN/
-│   │   ├── HUMAN_Pathogen_DB.fasta
-│   ├── FISH/
-│   ├── CRUSTACEAN/
-│   ├── all_groups_general_results.csv
+.
+├── data
+│   ├── input
+│   ├── output
+│   │   ├── CRUSTACEAN
+│   │   ├── FISH
+│   │   ├── HUMAN
+│   │       └── HUMAN_Pathogen_DB.fasta
+│   └── all_groups_general_results.csv
+
 ```
 
 ## Configuration
