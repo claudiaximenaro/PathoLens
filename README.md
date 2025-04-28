@@ -27,7 +27,7 @@ Clone the repository and install the package along with its dependencies:
 
 PathoLens expects the following directory structure for input data:
 
-
+```
 data/
 ├── input/
 │   ├── SILVA/
@@ -36,7 +36,7 @@ data/
 │   │   ├── Human_sp_pathogens_list.txt
 │   ├── FISH/
 │   ├── CRUSTACEAN/
-
+```
 
 ## Important:
 
@@ -50,7 +50,7 @@ data/
 ```bash
 python3 scripts/1_run_db_builder.py -h
 ```
-
+```
 usage: 1_run_db_builder.py [-h] --fasta FASTA --species SPECIES
                            --group GROUP
 
@@ -61,14 +61,14 @@ options:
   --fasta FASTA      FASTA input file (SILVA).
   --species SPECIES  TXT file with pathogenic species.
   --group GROUP      Taxonomic group (HUMAN, FISH, CRUSTACEAN).
-
+```
 
 ### Running the filters
 
 ```bash
 python3 scripts/2_run_db_filters.py -h
 ```
-
+```
 usage: 2_run_db_filters.py [-h] --group GROUP [--save_intermediate]
 
 Run taxonomy filters on a FASTA file.
@@ -77,13 +77,13 @@ options:
   -h, --help           show this help message and exit
   --group GROUP        Taxonomic group (HUMAN, FISH, CRUSTACEAN).
   --save_intermediate  Save intermediate results. (optional)
-
+```
 ### Running the curated database process
 
 ```bash
 python3 scripts/3_run_db_curation.py -h
 ```
-
+```
 usage: 3_run_db_curation.py [-h] --sp_remove SP_REMOVE --group GROUP
 
 Curated Pathogen Database Generator.
@@ -92,13 +92,13 @@ options:
   -h, --help            show this help message and exit
   --sp_remove SP_REMOVE Excel file with species to exclude.                   
   --group GROUP         Taxonomic group (HUMAN, FISH, CRUSTACEAN).
-
+```
 
 ## Output Data Structure
 
 Results are saved in the following directory structure:
 
-
+```
 data/
 ├── output/
 │   ├── HUMAN/
@@ -106,7 +106,7 @@ data/
 │   ├── FISH/
 │   ├── CRUSTACEAN/
 │   ├── all_groups_general_results.csv
-
+```
 
 ## Configuration
 
