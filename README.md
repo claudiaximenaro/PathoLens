@@ -25,7 +25,7 @@ Clone the repository and install the package along with its dependencies:
 
 ## Input Data Structure
 
-PathoLens expects the following directory structure for input data:
+PathoLens expects the following directory structure for input data, make sure you have at least the SILVA database and the list of species in their respective folders:
 
 ```
 .
