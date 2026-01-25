@@ -1,4 +1,9 @@
-# PathoLens
+# PathoLens 🔬🦠
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
+> Extract and curate pathogenic bacteria databases from SILVA for HUMAN, FISH, and CRUSTACEAN hosts.
 
 ## Overview
 
@@ -21,6 +26,16 @@ Clone the repository and install the package along with its dependencies:
  pip install -e .
 ```
 
+## Requirements
+
+- Python >= 3.8
+- biopython >= 1.79
+- pandas >= 1.3.0
+- openpyxl >= 3.0.0
+- requests >= 2.25.0
+
+All dependencies are automatically installed when running `pip install -e .`
+
 ## Usage
 
 ## Input Data Structure
@@ -42,6 +57,62 @@ PathoLens expects the following directory structure for input data, make sure yo
 ## Important:
 
 * You **do not need to provide full paths** for the input files, only the file names. The script assumes that the files are placed within the **structured input directories** imposed by PathoLens.
+
+## Quick Start Example
+
+```bash
+# Step 1: Build the database for HUMAN pathogens
+python3 scripts/1_run_db_builder.py \
+    --fasta SILVA_138.2_SSURef_tax_silva.fasta \
+    --species Human_sp_pathogens_list.txt \
+    --group HUMAN
+
+# Step 2: Apply taxonomy filters
+python3 scripts/2_run_db_filters.py --group HUMAN --save_intermediate
+
+# Step 3: Curate the final database
+python3 scripts/3_run_db_curation.py \
+    --sp_remove Tax_to_manual-review_HUMAN.xlsx \
+    --group HUMAN
+```
+
+After installation with `pip install -e .`, you can also use the CLI commands:
+
+```bash
+patholens-build --fasta SILVA_138.2_SSURef_tax_silva.fasta --species Human_sp_pathogens_list.txt --group HUMAN
+patholens-filter --group HUMAN --save_intermediate
+patholens-curate --sp_remove Tax_to_manual-review_HUMAN.xlsx --group HUMAN
+```
+
+## Pipeline Workflow
+
+```
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  SILVA Database  │     │  Species List    │     │  Exclusion File  │
+│  (FASTA)         │     │  (TXT)           │     │  (Excel)         │
+└────────┬─────────┘     └────────┬─────────┘     └────────┬─────────┘
+         │                        │                        │
+         ▼                        ▼                        │
+    ┌─────────────────────────────────────┐                │
+    │      1. Database Builder            │                │
+    │   Filters bacteria + pathogens      │                │
+    └─────────────────┬───────────────────┘                │
+                      ▼                                    │
+    ┌─────────────────────────────────────┐                │
+    │      2. Taxonomy Filters            │                │
+    │   Removes discrepancies             │                │
+    └─────────────────┬───────────────────┘                │
+                      ▼                                    │
+    ┌─────────────────────────────────────┐                │
+    │      3. Database Curation           │◄───────────────┘
+    │   Final curated database            │
+    └─────────────────┬───────────────────┘
+                      ▼
+    ┌─────────────────────────────────────┐
+    │     OUTPUT: Curated FASTA DB        │
+    │  + Species reports (CSV/Excel)      │
+    └─────────────────────────────────────┘
+```
 
   
 ## Command-line arguments:
