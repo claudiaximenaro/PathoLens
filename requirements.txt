@@ -1,5 +1,5 @@
 # Core dependencies
 biopython>=1.79
 pandas>=1.3.0
-openpyxl>=3.0.0
+openpyxl>=3.1.0
 requests>=2.25.0
